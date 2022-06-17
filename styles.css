@@ -399,6 +399,7 @@ header {
   transition: all 0.2s;
 }
 .buttons:hover {
+  -webkit-appearance: none;
   color: var(--clr-accent);
   background-color: var(--clr-light);
   border: 0.1em solid var(--clr-accent);
