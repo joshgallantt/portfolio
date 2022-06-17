@@ -21,23 +21,28 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <script defer src="scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Josh Gallant</title>
   </head>
   <body>
     <header>
       <!-- hamburger -->
-      <button class="nav-toggle" aria-label="toggle naviagtion">
-        <span class="hamburger"></span>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <div class="hamburger" id="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
       </button>
 
       <!-- navigation -->
       <nav class="nav">
         <ul class="nav_list">
-          <li class="nav_link"><a href="#home">Home</a></li>
           <li class="nav_link"><a href="#about">.about</a></li>
-          <li class="nav_link"><a href="#">[skills]</a></li>
-          <li class="nav_link"><a href="#">&lt;projects&gt;</a></li>
-          <li class="nav_link"><a href="#">contact(me)</a></li>
+          <li class="nav_link"><a href="#skills">[skills]</a></li>
+          <li class="nav_link"><a href="#projects">&lt;projects&gt;</a></li>
+          <li class="nav_link"><a href="#contact">contact(me)</a></li>
         </ul>
       </nav>
     </header>
@@ -68,20 +73,25 @@
           I began programming at a young age, messing around with modding video
           games and hosting private servers. Later in life I went to business
           school where I graduated with a bachelors of commerce. At my first few
-          jobs I created software to help us in our day to day work for fun. One of
-          which was a calculator for IKEA Canada. It became so useful for our
-          team that an executive of IKEA Canada was notified. I knew then, that
-          perhaps my calling was software instead.
+          jobs I created software for fun to help us in our day to day work.
         </p>
         <p>
-          Since then, I made software at work at every opportunity I could.
-          After a while I realized I had to devote myself fully to programming. After
-          taking multiple courses on various technologies through organizations
-          such as SwitchIT, Udemy, Codecadamy, & FreeCodeCamp, my goal is to combine
-          my knowledge of business and software to create beautifully effective solutions.
+          One of which was a calculator for IKEA Canada. It became so useful for our
+          team that an executive of IKEA Canada was notified. She loved it, and said something
+          similar would be implemented nation-wide. I knew then, that perhaps my
+          calling was software.
         </p>
         <p>
-          A few of my favorite things include traveling, video games, films & nature.
+          Since then, I realized I had to devote myself fully to programming.
+          After taking multiple courses on various technologies through
+          organizations such as SwitchIT, Udemy, Codecadamy, & FreeCodeCamp, my
+          goal is to combine my knowledge of business and software to create
+          beautifully effective solutions.
+        </p>
+        <p>
+          A few of my favorite things include traveling (I've lived in two
+          different countries and traveled to many others). Playing video games,
+          watching films & experiencing nature.
         </p>
       </div>
     </section>
@@ -159,23 +169,27 @@
     <section class="contact" id="contact">
       <h2 class="section_title">contact(me)</h2>
       <p class="section_subtitle section_subtitle--contact">
-        i'd love to hear from you!
+        i'd ❤️ to hear from you!
       </p>
-      <form action="mailto:info@w3docs.com" method="get" enctype="text/plain">
+      <form
+        action="mailto:joshgallant78@gmail.com"
+        method="get"
+        enctype="text/plain"
+      >
         <div>
           <label for="name"
-            >Name:
+            >your name:
             <input type="text" name="name" id="name" />
           </label>
         </div>
         <div>
           <label for="email"
-            >Email:
+            >your email:
             <input type="text" name="email" id="email" />
           </label>
         </div>
         <div>
-          <label>Comments:</label>
+          <label>message:</label>
           <br />
           <textarea name="comments" rows="12" cols="35"></textarea>
         </div>
