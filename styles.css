@@ -96,7 +96,7 @@ h3 {
 .section_subtitle--intro,
 .section_subtitle--about,
 .section_subtitle--skills,
-.section_subtitle--project,
+.section_subtitle--projects,
 .section_subtitle--contact {
   background: var(--clr-accent);
   padding: 0.25em 1em;
@@ -123,7 +123,9 @@ header {
   z-index: 100;
 
   transform: translateX(100%);
-  transition: transform 250ms cubic-bezier(.5, 0 ,.5 1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav_list {
@@ -139,7 +141,7 @@ header {
 
 .nav_link a{
   font-weight: var(--fw-bold);
-  font-size: var(--fs-h3);
+  font-size: var(--fs-h2);
   text-decoration: none;
   color: var(--clr-light);
 }
@@ -156,40 +158,49 @@ header {
   position: absolute;
   right: 2em;
   top: 2em;
+  z-index: 1000;
 }
 
-.hamburger {
+.nav-open {
+  transform: translateX(0);
+}
+
+.hamburger .line{
+  width: 50px;
+  height: 5px;
+  background-color: var(--clr-accent);
   display: block;
-  position: relative;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-  background: var(--clr-dark);
-  width: 2em;
-  height: 3px;
-  border-radius: 1em;
-  transition: transform 250ms ease-in-out;
+.hamburger:hover{
+  cursor: pointer;
 }
 
-.hamburger::before,
-.hamburger::after {
-  content: ' ';
-  position: absolute;
-  left: 0;
-  right: 0;
+#hamburger.is-active .line:nth-child(2){
+  opacity: 0;
 }
 
-
-.hamburger::before{
-  top: 6px;
+#hamburger.is-active .line:nth-child(1){
+  -webkit-transform: translateY(13px) rotate(45deg);
+  -ms-transform: translateY(13px) rotate(45deg);
+  -o-transform: translateY(13px) rotate(45deg);
+  transform: translateY(13px) rotate(45deg);
 }
 
-.hamburger::after{
-  bottom: 6px;
+#hamburger.is-active .line:nth-child(3){
+  -webkit-transform: translateY(-13px) rotate(-45deg);
+  -ms-transform: translateY(-13px) rotate(-45deg);
+  -o-transform: translateY(-13px) rotate(-45deg);
+  transform: translateY(-13px) rotate(-45deg);
 }
 
+.disable-scroll{
+  overflow: hidden;
+}
 
 /* Intro Layout Section */
 
