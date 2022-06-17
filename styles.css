@@ -2,7 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  /* border: 1px solid pink */
+  /* border: 1px solid black; */
 }
 
 :root {
@@ -108,7 +108,7 @@ h3 {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 1em;
+
 }
 
 .nav {
@@ -398,17 +398,31 @@ header {
   text-align: center;
   transition: all 0.2s;
 }
-.buttons:hover {
-  -webkit-appearance: none;
-  color: var(--clr-accent);
-  background-color: var(--clr-light);
-  border: 0.1em solid var(--clr-accent);
-  cursor: pointer;
+
+@media (hover: hover) {
+  .buttons:hover {
+    -webkit-appearance: none;
+    color: var(--clr-accent);
+    background-color: var(--clr-light);
+    border: 0.1em solid var(--clr-accent);
+    cursor: pointer;  
+  }
 }
+
+
 
 .tech img {
   max-width: 30px;
   max-height: 30px;
   display: inline;
   margin-top: 0.4em;
+}
+
+.section_subtitle a{
+  display: inline-block
+}
+
+.mygit {
+  height: 30px;
+  width: 30px;
 }
