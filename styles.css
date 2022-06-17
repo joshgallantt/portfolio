@@ -384,12 +384,6 @@ header {
   border-radius: 6px;
 }
 
-.tech img {
-  max-width: 30px;
-  display: inline;
-  margin-top: 0.4em;
-}
-
 .buttons {
   width: 10em;
   height: 3em;
@@ -410,9 +404,10 @@ header {
   border: 0.1em solid var(--clr-accent);
   cursor: pointer;
 }
-@media all and (max-width: 30em) {
-  .buttons {
-    display: block;
-    margin: 0.4em auto;
-  }
+
+.tech img {
+  max-width: 30px;
+  max-height: 30px;
+  display: inline;
+  margin-top: 0.4em;
 }
