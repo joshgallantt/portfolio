@@ -254,7 +254,7 @@ header {
   align-items: center;
   margin-bottom: 5em;
   text-align: center;
-  padding: 2em;
+  padding: 1.6em;
   background-color: white;
 }
 .layout:nth-child(even) {
