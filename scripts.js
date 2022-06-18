@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  AOS.init();
+
   $(".nav-toggle").click(function(){
     $('.hamburger').toggleClass("is-active");
     $('.nav').toggleClass("nav-open");
@@ -13,4 +13,7 @@ $(document).ready(function(){
     $('body').toggleClass("disable-scroll");
     $('html').toggleClass("disable-scroll");
   });
+
 });
+
+AOS.init();
